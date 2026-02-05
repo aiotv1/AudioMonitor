@@ -1,5 +1,5 @@
 # Audio Monitor
-
+<img width="1640" height="664" alt="New Project (96)" src="https://github.com/user-attachments/assets/bd6aa237-b7ff-44df-9a20-3c2da84b5ce5" />
 A system tray application that displays the icon of the currently playing audio application.
 
 ## 📋 Features
@@ -77,3 +77,4 @@ Free for personal and commercial use
 ---
 
 Made with ❤️ for the community
+
