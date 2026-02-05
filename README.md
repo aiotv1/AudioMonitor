@@ -1,79 +1,79 @@
-# Audio Monitor - مراقب الصوت
+# Audio Monitor
 
-برنامج يعمل في شريط المهام (System Tray) ويعرض أيقونة التطبيق الذي يصدر صوت في الوقت الحالي.
+A system tray application that displays the icon of the currently playing audio application.
 
-## 📋 المميزات
+## 📋 Features
 
-- ✅ يعمل في شريط المهام بجانب الساعة
-- ✅ يراقب جميع التطبيقات التي تصدر أصوات
-- ✅ يعرض أيقونة التطبيق النشط الذي يصدر صوت
-- ✅ يتحدث تلقائياً عند تغيير التطبيق
-- ✅ واجهة بسيطة وسهلة الاستخدام
+- ✅ Runs in the system tray next to the clock
+- ✅ Monitors all applications producing audio
+- ✅ Displays the icon of the active application producing sound
+- ✅ Updates automatically when the application changes
+- ✅ Simple and easy-to-use interface
 
-## 🚀 التثبيت والاستخدام
+## 🚀 Installation and Usage
 
-### الطريقة 1: تشغيل البرنامج مباشرة (يتطلب Python)
+### Method 1: Run the Program Directly (Requires Python)
 
-1. **تثبيت المكتبات المطلوبة:**
+1. **Install required libraries:**
 ```bash
 pip install -r requirements.txt
 ```
 
-2. **تشغيل البرنامج:**
+2. **Run the program:**
 ```bash
 python audio_monitor.py
 ```
 
-### الطريقة 2: إنشاء ملف EXE (موصى به)
+### Method 2: Create an EXE File (Recommended)
 
-1. **تثبيت المكتبات المطلوبة:**
+1. **Install required libraries:**
 ```bash
 pip install -r requirements.txt
 pip install pyinstaller
 ```
 
-2. **إنشاء ملف EXE:**
+2. **Create the EXE file:**
 ```bash
 pyinstaller --onefile --windowed --name=AudioMonitor --clean audio_monitor.py
 ```
 
-3. **تشغيل البرنامج:**
-   - انتقل إلى مجلد `dist`
-   - قم بتشغيل `AudioMonitor.exe`
-   - ستظهر الأيقونة في شريط المهام بجانب الساعة
+3. **Run the program:**
+- Navigate to the `dist` folder
+- Run `AudioMonitor.exe`
+- The icon will appear in the system tray next to the clock
 
-## 📖 كيفية الاستخدام
+## 📖 How to Use
 
-1. قم بتشغيل البرنامج
-2. ستظهر أيقونة في شريط المهام
-3. عند تشغيل أي صوت (موسيقى، فيديو، إلخ)، ستتغير الأيقونة لتعرض أيقونة التطبيق الذي يصدر الصوت
-4. انقر بزر الماوس الأيمن على الأيقونة للوصول إلى القائمة:
-   - **حول البرنامج**: عرض معلومات البرنامج
-   - **إغلاق**: إغلاق البرنامج
+1. Run the program
+2. An icon will appear in the system tray
+3. When any audio plays (music, video, etc.), the icon will change to display the icon of the application producing the sound
+4. Right-click on the icon to access the menu:
+   - **About**: Display program information
+   - **Exit**: Close the program
 
-## 🛠️ المتطلبات
+## 🛠️ Requirements
 
 - Windows 10/11
-- Python 3.7+ (إذا كنت تشغل البرنامج مباشرة)
+- Python 3.7+ (if running the program directly)
 
-## 📦 المكتبات المستخدمة
+## 📦 Libraries Used
 
-- **pycaw**: للوصول إلى جلسات الصوت في Windows
-- **pystray**: لإنشاء أيقونة system tray
-- **Pillow**: للتعامل مع الصور
-- **psutil**: للحصول على معلومات العمليات
-- **pywin32**: للوصول إلى Windows API
+- **pycaw**: For accessing Windows audio sessions
+- **pystray**: For creating system tray icon
+- **Pillow**: For image handling
+- **psutil**: For process information
+- **pywin32**: For accessing Windows API
 
-## ⚠️ ملاحظات
+## ⚠️ Notes
 
-- البرنامج يعمل فقط على نظام Windows
-- يحتاج صلاحيات للوصول إلى معلومات الصوت والعمليات
-- الأيقونة تتحدث كل 0.5 ثانية
+- The program works only on Windows
+- Requires permissions to access audio and process information
+- The icon updates every 0.5 seconds
 
-## 📝 الترخيص
+## 📝 License
 
-مجاني للاستخدام الشخصي والتجاري
+Free for personal and commercial use
 
 ---
 
-صنع بـ ❤️ للمجتمع العربي
+Made with ❤️ for the community
